@@ -6,6 +6,7 @@ r2 = float(input("Segunda reta: "))
 r3 = float(input("Terceira reta: "))
 maior = float
 
+
 if r1 > r2 and r1 > r3:
     maior = r1
 elif r2 > r3:

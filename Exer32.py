@@ -1,8 +1,6 @@
 # Faça um programa que leia um ano qualquer e diga se ele é bissexto.
 from datetime import date
 
-import dateutil.utils
-
 ano = int(input("Diga qualquer ano para saber se ele é bissexto: "))
 print(ano % 100)
 
