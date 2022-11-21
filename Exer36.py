@@ -11,7 +11,7 @@ condicao = 30 / 100 * salario
 prestacao = valorImovel / meses
 
 if prestacao > condicao:
-    print("Infelizmente a prestação foi {:.2f} e passou dos 30% e seu emprestimo foi {}NEGADO{}.".format(prestacao, "\033[31m", "\033[m"))
+    print("Infelizmente a prestação foi R${:.2f} e passou dos 30% e seu emprestimo foi {}NEGADO{}.".format(prestacao, "\033[31m", "\033[m"))
 else:
     print("Seu emprestimo foi {}APROVADO{}, as parcelas são de R${:.2f}.".format("\033[32m", "\033[m", prestacao))
 

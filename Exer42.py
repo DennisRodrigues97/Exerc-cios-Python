@@ -20,7 +20,13 @@ elif r2 > r3:
 else:
     maior = r3
 
-# Calcula se a soma de todos os lados, menos o lado maior para identificar se pode ser formado triângulo.
+# Outra opção para validar se é possível formar um triângulo
+# if r1 + r2 > r3 and r2 + r3 > r1 and r2 + r1 > r3:
+#     print("Pode formar triângulo.")
+# else:
+#     print("Não pode formar triângulo.")
+
+# Calcula se a soma de todos os lados menos o lado maior, para identificar se pode ser formado triângulo.
 triangulo = r1 + r2 + r3 - maior
 
 # valida se a variavel anterior é maior que o maior lado, se sim executa o bloco verdadeiro.

@@ -18,7 +18,9 @@ elif idade <= 14:
     categoria = "infantil"
 elif idade <= 19:
     categoria = "junior"
+elif idade <= 25:
+    categoria = "senior"
 else:
     categoria = "master"
 
-print("Categoria {}".format(categoria))
+print("Idade {}.\nCategoria {}.".format(idade, categoria))

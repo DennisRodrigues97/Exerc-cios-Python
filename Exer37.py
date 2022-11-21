@@ -13,19 +13,15 @@ baseEscolhida = int(input("Digite:\n1 para binário\n2 para octal\n3 para hexade
 binario = bin(decimal)
 octal = oct(decimal)
 hexadecimal = hex(decimal)
-processando = "Processando... {}".format(emojize("⌛", language="pt"))
+
+print("Processando... {}".format(emojize("⌛", language="pt")))
+sleep(2)
 
 if baseEscolhida == 1:
-    print(processando)
-    sleep(2)
     print("Binário: {}{}{}".format("\033[1;32;40m", binario[2::], "\033[m"))
 elif baseEscolhida == 2:
-    print(processando)
-    sleep(2)
     print("Octal: {}{}{}".format("\033[1;32;40m", octal[2::], "\033[m"))
 elif baseEscolhida == 3:
-    print(processando)
-    sleep(2)
     print("Hexadecimal: {}{}{}".format("\033[1;32;40m", hexadecimal[2::], "\033[m"))
 else:
     print("Escolha inválida.")
