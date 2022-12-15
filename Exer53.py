@@ -1,7 +1,7 @@
 frase = str(input("Digite sua frase: "))
-print(frase, ",", end=",")
 frase = "".join(frase.split()).lower()
+print("{}, ".format(frase[::-1]), end="")
 if frase == frase[::-1]:
-    print("É polindromo!")
+    print("é polindromo!")
 else:
-    print("Não é polindromo!")
+    print("não é polindromo!")
