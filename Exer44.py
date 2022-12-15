@@ -1,4 +1,4 @@
-print("{:~^40}".format("Villares Móveis"))
+print(f'{"Villares Móveis":~^40}')
 
 preco = float(input("Valor das compras R$ "))
 a_vista = preco - (10 / 100) * preco

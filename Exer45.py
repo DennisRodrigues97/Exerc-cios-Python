@@ -8,8 +8,6 @@ emoji = {
     "3": emojize(":victory_hand:"),
     "empate": emojize(":handshake:")
 }
-
-
 usuario = input("1 - Pedra\n2 - Papel\n3 - Tesoura\n")
 comput = random.randint(1, 3)
 comput = str(comput)
@@ -17,7 +15,6 @@ vencedor = ""
 
 print("Você escolheu {}".format(emoji[usuario]))
 print("O computador escolheu {}".format(emoji[comput]))
-
 
 if usuario == comput:
     print("Vocês empataram {}".format(emoji["empate"]))
