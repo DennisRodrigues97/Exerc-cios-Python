@@ -17,3 +17,24 @@ while user != num:
 if num == user:
     print(f"Você acertou!!! O número escolhido foi {num}")
     print(f"Foram necessárias {cont} tentativas para você acertar.")
+'''
+Solução criada após a aula do Prof. Guanabara.
+Utilizando um boleano como variável de controle o programa fica melhor, mais legivel. 
+import random
+from random import randint
+
+computador = random.randint(0, 10)
+resultado = False
+contador = 0
+
+while not resultado:
+    usuario = int(input("Advinhe qual número o computador pensou: "))
+    contador += 1
+    if computador == usuario:
+        resultado = True
+    else:
+        if computador > usuario:
+            print("Mais...")
+        elif usuario > computador:
+            print("Menos...")
+print(f"Parabéns, você acertou em {contador} tentativas.")'''
